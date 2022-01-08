@@ -4,5 +4,5 @@
 在GLOBAL_CONFIG中配置相关信息即可
 
 ### 2022.01.08更新
-1、添加arm/mips架构的qemu支持\n
-2、添加arm/mips架构的qemu的调试支持
+1、添加arm/mips架构的qemu支持. 
+2、添加arm/mips架构的qemu的调试支持. 
