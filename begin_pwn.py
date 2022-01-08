@@ -65,8 +65,11 @@ def connect(_mode,binary,ip,port,_qm_port):
         r = process(PROCESS_CONFIG)
     if _mode == "debug":
         context.terminal = ['tmux','splitw','-h']
-        PROCESS_CONFIG.insert(1,'-g')
-        PROCESS_CONFIG.insert(2,str(_qm_port))
+        try:
+            PROCESS_CONFIG.insert(1,'-g')
+            PROCESS_CONFIG.insert(2,str(_qm_port))
+        except:
+            pass
         r = process(PROCESS_CONFIG)
 
 
